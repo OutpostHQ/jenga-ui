@@ -1,7 +1,0 @@
-export * from './src/Content'
-export * from './src/Divider'
-export * from './src/Footer'
-export * from './src/Header'
-export * from './src/Paragraph'
-export * from './src/Text'
-export * from './src/Title'

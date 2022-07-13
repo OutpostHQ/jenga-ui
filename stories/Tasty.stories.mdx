@@ -1,0 +1,121 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import {
+  Button,
+  Root,
+  Space,
+  Card,
+  Text,
+  Block,
+  Paragraph,
+  Flow,
+  Flex,
+} from '../index';
+import { StyledButton, GlobalStyledHeading } from './components/StyledButton';
+
+<Meta title="Tasty API" />
+
+# Tasty API
+
+Let's look at styled API:
+
+```typescript jsx
+import { tasty } from 'tastycss';
+
+const Element = tasty({
+  /** The tag name of the element. */
+  as: 'span',
+  /** Default styles of the element. */
+  styles: {
+    // tokens
+    '@local-padding': ['2x', '1x'], // responsive styles
+    '@text-color': 'rgba(255, 0, 0)',
+    // styles
+    padding: '@local-padding',
+    color: {
+      // the default color
+      '': '#text',
+      // the color if `blue` mod is specified
+      blue: 'blue',
+    }, // use color token
+  },
+  /** Default attributes (example) */
+  role: 'article',
+  /** The list of styles that can be provided by props */
+  styleProps: ['align'],
+});
+```
+
+Now you can use this element inside your React App:
+
+```typescript jsx
+export default function Component({ title, children }) {
+  return (
+    <>
+      <Heading>{title}</Heading>
+      <Element>{children}</Element>
+    </>
+  );
+}
+```
+
+## Extend base options
+
+You can use `tasty()` function to extend styling of the existing component.
+
+```typescript jsx
+const CustomElement = tasty(Element, {
+  /** Change tag name */
+  as: 'input',
+  /** Extend or rewrite styles */
+  styles: {
+    color: '#purple',
+  },
+  /** Add more default properties/attributes */
+  role: 'article',
+});
+```
+
+An example of styled component.
+
+```typescript jsx
+import { Button } from '@jenga-ui/core';
+import { tasty } from 'tastycss';
+
+const StyledButton = tasty(Button, {
+  styles: {
+    padding: '3x 6x',
+    preset: 't1',
+  },
+});
+```
+
+<Canvas>
+  <Story name="Styled Button">
+    <StyledButton>Styled Button</StyledButton>
+  </Story>
+</Canvas>
+
+## Define global styles
+
+Use `tasty()` to define global styles for elements:
+
+```typescript jsx
+import { tasty } from 'tastycss';
+
+const GlobalStyledHeading = tasty('div.myButton', {
+  display: 'inline-block',
+  padding: '1x 2x',
+  preset: 't2',
+  border: true,
+  radius: true,
+});
+```
+
+The `div` is used only for demonstration purposes. Do not use `div`s as buttons!
+
+<Canvas>
+  <Story name="Globally Styled Button">
+    <div className="myButton">Styled Button</div>
+    <GlobalStyledHeading />
+  </Story>
+</Canvas>

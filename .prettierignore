@@ -6,3 +6,4 @@ yarn.lock
 package.json
 .*
 !.storybook
+/examples/public/*

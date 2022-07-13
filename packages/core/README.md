@@ -1,7 +1,5 @@
 # @jenga-ui/core
 
-Note: This project is WIP, API might change without notice.
-
 ## Installation
 
 ```sh
@@ -16,6 +14,6 @@ For discussions, suggestions and contributions, create an issue or join our [Dis
 
 ## License
 
-Jenga-UI is a project by [Forneu](https://forneu.com).
+Jenga-UI is a project by [Outpost](https://outpost.run).
 
 Released under the MIT License.

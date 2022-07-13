@@ -41,31 +41,48 @@
   "dependencies": {
     "@jenga-ui/active-zone": "^0.1.1",
     "@jenga-ui/alert": "^0.1.1",
+    "@jenga-ui/alert-dialog": "^0.1.1",
     "@jenga-ui/avatar": "^0.1.1",
     "@jenga-ui/badge": "^0.1.1",
-    "@jenga-ui/base-input": "^0.1.1",
     "@jenga-ui/button": "^0.1.1",
     "@jenga-ui/button-group": "^0.1.1",
     "@jenga-ui/card": "^0.1.1",
     "@jenga-ui/checkbox": "^0.1.1",
     "@jenga-ui/combo-box": "^0.1.1",
     "@jenga-ui/content": "^0.1.1",
+    "@jenga-ui/copy-snippet": "^0.1.1",
+    "@jenga-ui/dialog": "^0.1.1",
     "@jenga-ui/file-input": "^0.1.1",
-    "@jenga-ui/file-tabs": "^0.1.1",
+    "@jenga-ui/form": "^0.1.1",
     "@jenga-ui/input": "^0.1.1",
+    "@jenga-ui/layout": "^0.1.1",
     "@jenga-ui/link": "^0.1.1",
+    "@jenga-ui/menu": "^0.1.1",
     "@jenga-ui/modal": "^0.1.1",
+    "@jenga-ui/notification": "^0.1.1",
     "@jenga-ui/number-input": "^0.1.1",
+    "@jenga-ui/overlays": "^0.1.1",
     "@jenga-ui/password-input": "^0.1.1",
     "@jenga-ui/placeholder": "^0.1.1",
+    "@jenga-ui/portal": "^0.1.1",
+    "@jenga-ui/prism-code": "^0.1.1",
+    "@jenga-ui/providers": "^0.1.1",
     "@jenga-ui/radio": "^0.1.1",
+    "@jenga-ui/result": "^0.1.1",
     "@jenga-ui/search-input": "^0.1.1",
     "@jenga-ui/select": "^0.1.1",
+    "@jenga-ui/services": "^0.1.1",
     "@jenga-ui/skeleton": "^0.1.1",
     "@jenga-ui/switch": "^0.1.1",
     "@jenga-ui/tabs": "^0.1.1",
     "@jenga-ui/tag": "^0.1.1",
-    "@jenga-ui/textarea": "^0.1.1"
+    "@jenga-ui/text-input": "^0.1.1",
+    "@jenga-ui/textarea": "^0.1.1",
+    "@jenga-ui/tooltip": "^0.1.1",
+    "@jenga-ui/utils": "^0.1.1",
+    "@react-aria/overlays": "^3.9.1",
+    "react-transition-group": "^4.4.2",
+    "tastycss": "^0.7.5"
   },
   "publishConfig": {
     "access": "public"
@@ -75,19 +92,20 @@
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.39",
+    "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
-    "@vitejs/plugin-react": "^1.2.0",
+    "@vitejs/plugin-react": "^1.3.2",
+    "node-abort-controller": "^3.0.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.5.5",
-    "vite": "^2.8.0"
+    "typescript": "^4.5.4",
+    "vite": "^2.9.14"
   },
-  "homepage": "https://github.com/numldesign/jenga-ui",
+  "homepage": "https://github.com/OutpostHQ/jenga-ui",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/numldesign/jenga-ui.git"
+    "url": "git+https://github.com/OutpostHQ/jenga-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/numldesign/jenga-ui/issues"
+    "url": "https://github.com/OutpostHQ/jenga-ui/issues"
   }
 }

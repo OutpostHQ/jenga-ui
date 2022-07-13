@@ -1,0 +1,70 @@
+{
+  "name": "@jenga-ui/checkbox",
+  "version": "0.1.1",
+  "license": "MIT",
+  "description": "Jenga-UI React checkbox component",
+  "keywords": [
+    "checkbox",
+    "react",
+    "jenga-ui",
+    "ui",
+    "clickable",
+    "tabbable"
+  ],
+  "files": [
+    "dist",
+    "types"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "require": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
+  "types": "types/index.d.ts",
+  "typings": "types/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "prebuild": "rimraf dist && rimraf types",
+    "postbuild": "yarn build:types",
+    "build:types": "npx tsc -b --verbose"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@react-types/checkbox": "^3.3.1",
+    "@react-types/shared": "^3.13.1",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@vitejs/plugin-react": "^1.3.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.14"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@react-aria/checkbox": "^3.4.1",
+    "@react-aria/interactions": "^3.9.1",
+    "@react-spectrum/utils": "^3.7.1",
+    "@react-stately/checkbox": "^3.1.1",
+    "@react-stately/toggle": "^3.3.1",
+    "tastycss": "^0.7.5"
+  },
+  "homepage": "https://github.com/OutpostHQ/jenga-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OutpostHQ/jenga-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OutpostHQ/jenga-ui/issues"
+  }
+}
